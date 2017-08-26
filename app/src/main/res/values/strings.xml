@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">LBR</string>
+    <string name="blueAndBlack1">blueAndBlack1</string>
+    <string name="blueAndBlack2">blueAndBlack2</string>
+    <string name="blueAndBlack3">blueAndBlack3</string>
+    <string name="blueAndBlack4">blueAndBlack4</string>
+    <string name="blueAndBlack5">blueAndBlack5</string>
+    <string name="blueAndBlack6">blueAndBlack6</string>
+    <string name="SecondHelloWorld">Second Hello World</string>
+    <string name="EditedHelloWorld">Hello World! Edited!!</string>
+    <string name="testString">Test String</string>
+    <string name="showLina">Show Lina</string>
+    <string name="hideLina">Hide Lina</string>
+
 </resources>
