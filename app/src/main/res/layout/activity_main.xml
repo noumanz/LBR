@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mdnappz.lbr.MainActivity"
+    android:background="@drawable/lina"
     android:orientation="vertical"
     android:weightSum="1"
-    android:background="@drawable/lina"
-    android:id="@+id/mainLayout">
+    tools:context="com.mdnappz.lbr.MainActivity">
 
     <TextView
+        android:id="@+id/textHelloWorld"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/EditedHelloWorld"
-        android:padding="20dp"
-        android:textSize="25sp"
-        android:id="@+id/textHelloWorld"
         android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/EditedHelloWorld"
         android:textColor="@android:color/white"
-        />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/secondHelloWorld"
@@ -28,80 +27,77 @@
         android:padding="15dp"
         android:text="@string/SecondHelloWorld"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
         android:textSize="20sp"
-        />
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:rowCount="3"
-        android:columnCount="2"
         android:layout_gravity="center"
-        android:padding="15dp">
+        android:columnCount="2"
+        android:padding="15dp"
+        android:rowCount="3">
 
         <Button
-            android:text="@string/blueAndBlack1"
-            android:layout_column="0"
-            android:layout_row="0"
             android:id="@+id/button1"
+            android:layout_column="0"
+            android:layout_row="0"
             android:onClick="b1press"
-            />
+            android:text="@string/blueAndBlack1" />
+
         <Button
-            android:text="@string/blueAndBlack2"
+            android:id="@+id/button2"
             android:layout_column="1"
             android:layout_row="0"
-            android:id="@+id/button2"
             android:onClick="b2press"
-            />
+            android:text="@string/blueAndBlack2" />
+
         <Button
-            android:text="@string/blueAndBlack3"
-            android:layout_column="0"
-            android:layout_row="1"
             android:id="@+id/button3"
+            android:layout_column="0"
+            android:layout_row="1"
             android:onClick="b3press"
-            />
+            android:text="@string/blueAndBlack3" />
+
         <Button
-            android:text="@string/blueAndBlack4"
+            android:id="@+id/button4"
             android:layout_column="1"
             android:layout_row="1"
-            android:id="@+id/button4"
             android:onClick="b4press"
-            />
+            android:text="@string/blueAndBlack4" />
+
         <Button
-            android:text="@string/blueAndBlack5"
+            android:id="@+id/button5"
             android:layout_column="0"
             android:layout_row="2"
-            android:id="@+id/button5"
             android:onClick="b5press"
-            />
+            android:text="@string/blueAndBlack5" />
+
         <Button
-            android:text="@string/blueAndBlack6"
+            android:id="@+id/button6"
             android:layout_column="1"
             android:layout_row="2"
-            android:id="@+id/button6"
             android:onClick="b6press"
-            />
+            android:text="@string/blueAndBlack6" />
 
     </GridLayout>
 
     <TextView
+        android:id="@+id/testString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/testString"
-        android:padding="15dp"
         android:layout_gravity="center"
-        android:textSize="25sp"
-        android:id="@+id/testString"
+        android:padding="15dp"
+        android:text="@string/testString"
         android:textColor="@android:color/white"
-        />
+        android:textSize="25sp" />
 
     <Button
+        android:id="@+id/linaToggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/linaToggle"
-        android:text="@string/hideLina"
+        android:layout_gravity="center"
         android:onClick="linaToggle"
-        android:layout_gravity="center"/>
+        android:text="@string/hideLina" />
 
 </LinearLayout>

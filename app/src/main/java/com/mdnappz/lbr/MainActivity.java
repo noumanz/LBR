@@ -13,21 +13,22 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout linearLayout;
     Button toggleLina, button1, button2, button3, button4, button5, button6;
     TextView textHelloWorld, secondHelloWorld, testString;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        linearLayout = (LinearLayout)findViewById(R.id.mainLayout);
-        button1 = (Button)findViewById(R.id.button1);
-        button2 = (Button)findViewById(R.id.button2);
-        button3 = (Button)findViewById(R.id.button3);
-        button4 = (Button)findViewById(R.id.button4);
-        button5 = (Button)findViewById(R.id.button5);
-        button6 = (Button)findViewById(R.id.button6);
-        testString = (TextView)findViewById(R.id.testString);
-        textHelloWorld = (TextView)findViewById(R.id.textHelloWorld);
-        secondHelloWorld = (TextView)findViewById(R.id.secondHelloWorld);
-        toggleLina = (Button)findViewById(R.id.linaToggle);
+        linearLayout = (LinearLayout) findViewById(R.id.mainLayout);
+        button1 = (Button) findViewById(R.id.button1);
+        button2 = (Button) findViewById(R.id.button2);
+        button3 = (Button) findViewById(R.id.button3);
+        button4 = (Button) findViewById(R.id.button4);
+        button5 = (Button) findViewById(R.id.button5);
+        button6 = (Button) findViewById(R.id.button6);
+        testString = (TextView) findViewById(R.id.testString);
+        textHelloWorld = (TextView) findViewById(R.id.textHelloWorld);
+        secondHelloWorld = (TextView) findViewById(R.id.secondHelloWorld);
+        toggleLina = (Button) findViewById(R.id.linaToggle);
     }
 
     public void linaToggle(View v) {
@@ -44,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
             textHelloWorld.setTextColor(Color.parseColor("#ffffff"));
             secondHelloWorld.setTextColor(Color.parseColor("#ffffff"));
             testString.setTextColor(Color.parseColor("#ffffff"));
-        }
-        else {
+        } else {
             linearLayout.setBackgroundColor(Color.parseColor("#ffffff"));
             toggleLina.setText(getString(R.string.showLina));
             button1.setTextColor(Color.parseColor("#000000"));
@@ -64,18 +64,23 @@ public class MainActivity extends AppCompatActivity {
     public void b1press(View v) {
         testString.setText(getString(R.string.blueAndBlack1));
     }
+
     public void b2press(View v) {
         testString.setText(getString(R.string.blueAndBlack2));
     }
+
     public void b3press(View v) {
         testString.setText(getString(R.string.blueAndBlack3));
     }
+
     public void b4press(View v) {
         testString.setText(getString(R.string.blueAndBlack4));
     }
+
     public void b5press(View v) {
         testString.setText(getString(R.string.blueAndBlack5));
     }
+
     public void b6press(View v) {
         testString.setText(getString(R.string.blueAndBlack6));
     }
