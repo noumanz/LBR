@@ -11,5 +11,6 @@
     <string name="testString">Test String</string>
     <string name="showLina">Show Lina</string>
     <string name="hideLina">Hide Lina</string>
+    <string name="switchActivity">Switch Activity</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.mdnappz.lbr;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,11 +9,16 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class MainActivity extends AppCompatActivity {
+
+    public static final String EXTRA_MESSAGE = "keyt";
 
     LinearLayout linearLayout;
     Button toggleLina, button1, button2, button3, button4, button5, button6;
     TextView textHelloWorld, secondHelloWorld, testString;
+    String randomStringToPass = "Random String to Pass";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void b6press(View v) {
         testString.setText(getString(R.string.blueAndBlack6));
+    }
+
+    public void switchActivity(View v) {
+        Intent intent = new Intent(this, NewActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, randomStringToPass);
+        startActivity(intent);
     }
 
 }

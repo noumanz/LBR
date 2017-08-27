@@ -100,4 +100,12 @@
         android:onClick="linaToggle"
         android:text="@string/hideLina" />
 
+    <Button
+        android:id="@+id/switchActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="switchActivity"
+        android:text="@string/switchActivity" />
+
 </LinearLayout>
